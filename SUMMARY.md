@@ -18,6 +18,7 @@
       * [Linear Search](technical/general-topics/algorithms/linear-search.md)
       * [Binary Search](technical/general-topics/algorithms/binary-search.md)
       * [Bubble Sort](technical/general-topics/algorithms/bubble-sort.md)
+      * [Selection Sort](technical/general-topics/algorithms/selection-sort.md)
     * [Dynamic Programming](technical/general-topics/dynamic-programming/README.md)
       * [Introduction to Dynamic Programming 1](technical/general-topics/dynamic-programming/introduction-to-dynamic-programming-1.md)
   * [Problems and Solution](technical/problems-and-solution/README.md)
