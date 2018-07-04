@@ -47,3 +47,7 @@ To find the minimum element from the array of N elements, N−1 comparisons are 
 
 Therefore \(N−1\) + \(N−2\) + ....... + 1 = \(N⋅\(N−1\)\)/2 comparisons and N swaps result in the overall complexity of O\(N2\).
 
+#### VISUALIZER
+
+[https://www.hackerearth.com/practice/algorithms/sorting/selection-sort/visualize/](https://www.hackerearth.com/practice/algorithms/sorting/selection-sort/visualize/)
+
