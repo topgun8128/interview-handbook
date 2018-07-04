@@ -44,9 +44,11 @@ There is no index that satisfies the conditions in the problem statement.
 
 ### Verbal
 
+\[TBC\]
+
 ### Java 
 
-#### Solution 1
+#### Solution 1 -  Efficiency: 2 \* O\(N\)
 
 ```java
 class Solution {
@@ -82,6 +84,10 @@ class Solution {
     }
 }
 ```
+
+#### Solution 2 - Efficiency: better
+
+\[TBC\]
 
 ### Python 2
 

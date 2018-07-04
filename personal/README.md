@@ -1,6 +1,4 @@
----
-description: '[TBD]'
----
-
 # Personal
+
+\[TBC\]
 
