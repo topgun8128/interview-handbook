@@ -106,22 +106,22 @@ Using the key \(passed in the get\(\) method\) again hash value will be calculat
 
 **In case of null Key**
 
-HashMap in Java also allows null as key, though there can only be one null key in HashMap. While storing the Entry object HashMap implementation checks if the key is null, in case key is null, it always map to bucket 0, as hash is not calculated for null keys. 
+**HashMap in Java also allows null as key**, though there can only be one null key in HashMap. While storing the Entry object HashMap implementation checks if the key is null, in case key is null, it always map to bucket 0, as **hash is not calculated for null keys.** 
 
 **HashMap changes in Java 8**
 
-Though HashMap implementation in Java provides constant time performance O\(1\) for get\(\) and put\(\) methods but that is in the ideal case when the Hash function distributes the objects evenly among the buckets. 
+Though HashMap implementation in Java provides constant time performance **O\(1\)** for get\(\) and put\(\) methods but that is in the **ideal case** when the Hash function distributes the objects evenly among the buckets. 
 
 But the performance may worsen in the case **hashCode\(\)** used is not proper and there are lots of hash collisions. As we know now that in case of hash collision entry objects are stored as a node in a linked-list and **equals\(\)** method is used to compare keys. That comparison to find the correct key with in a linked-list is a linear operation so in a worst case scenario the complexity becomes O\(n\).
 
-To address this issue in Java 8 hash elements use balanced trees instead of linked lists after a certain threshold is reached. Which means HashMap starts with storing Entry objects in linked list but after the number of items in a hash becomes larger than a certain threshold, the hash will change from using a linked list to a balanced tree, this will improve the worst case performance from O\(n\) to O\(log n\).
+To address this issue in Java 8 hash elements **use balanced trees instead of linked lists after a certain threshold is reached**. Which means HashMap starts with storing Entry objects in linked list but after the number of items in a hash becomes larger than a certain threshold, the hash will change from using a linked list to a balanced tree, this will improve the worst case performance **from O\(n\) to O\(log n\).**
 
 **Points to note -**
 
 * HashMap works on the principal of hashing.
 * HashMap uses the hashCode\(\) method to calculate a hash value. Hash value is calculated using the key object. This hash value is used to find the correct bucket where Entry object will be stored.
 * HashMap uses the equals\(\) method to find the correct key whose value is to be retrieved in case of get\(\) and to find if that key already exists or not in case of put\(\).
-* Hashing collision means more than one key having the same hash value, in that case Entry objects are stored as a linked-list with in a same bucket.
+* **Hashing collision means more than one key having the same hash value**, in that case Entry objects are stored as a linked-list with in a same bucket.
 * With in a bucket values are stored as Entry objects which contain both key and value.
 * In Java 8 hash elements use balanced trees instead of linked lists after a certain threshold is reached while storing values. This improves the worst case performance from O\(n\) to O\(log n\). 
 
