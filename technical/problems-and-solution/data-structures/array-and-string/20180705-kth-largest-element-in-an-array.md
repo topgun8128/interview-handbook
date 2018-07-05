@@ -34,10 +34,25 @@ You may assume k is always valid, 1 ≤ k ≤ array's length.
 **Method 1 \(Simple Solution\)**   
 A Simple Solution is to sort the given array using a O\(nlogn\) sorting algorithm like [Merge Sort](http://geeksquiz.com/merge-sort/), [Heap Sort](http://geeksquiz.com/heap-sort/), etc and return the element at index k-1 in the sorted array. Time Complexity of this solution is O\(nLogn\).
 
-**Method 2 \(Using Min Heap – HeapSelect\)**  
-We can find k’th largest element in time complexity better than O\(nlogn\). A simple optomization is to create a [Max Heap ](http://geeksquiz.com/binary-heap/)of the given n elements and call extractMax\(\) k times.
+**Method 4 \(QuickSelect\)**   
+This is an optimization over method 1 if [QuickSort ](http://geeksquiz.com/quick-sort/)is used as a sorting algorithm in first step. In QuickSort, we pick a pivot element, then move the pivot element to its correct position and partition the array around it. The idea is, not to do complete quicksort, but stop at the point where pivot itself is k’th largest element. Also, not to recur for both left and right sides of pivot, but recur for one of them according to the position of pivot. The worst case time complexity of this method is **O\(n2\)**, but it works in **O\(n\) on average**.
 
 ### Java
 
-#### Solution 1 - Efficiency: 
+#### Solution 1 - Efficiency: O\(N log N\)
+
+```java
+class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        Arrays.sort(nums);
+        return nums[nums.length-k];
+    }
+}
+```
+
+#### Solution 2 - Efficiency: Average: O\(N\), Max: O\(N^2\)
+
+```java
+
+```
 

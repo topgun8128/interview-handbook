@@ -42,6 +42,7 @@
         * [20180704 Largest Number At Least Twice of Others](technical/problems-and-solution/data-structures/array-and-string/20180704-largest-number-at-least-twice-of-others.md)
         * [20180704 Plus One](technical/problems-and-solution/data-structures/array-and-string/20180704-plus-one.md)
         * [20180705 Kth Largest Element in an Array](technical/problems-and-solution/data-structures/array-and-string/20180705-kth-largest-element-in-an-array.md)
+        * [20180705 Merge Sort](technical/problems-and-solution/data-structures/array-and-string/20180705-merge-sort.md)
       * [Linked List](technical/problems-and-solution/data-structures/linked-list.md)
       * [Complex](technical/problems-and-solution/data-structures/complex.md)
 
