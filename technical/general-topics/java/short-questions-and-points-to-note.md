@@ -1,4 +1,4 @@
-# Short Questions and Points to Note
+# Quick Summary
 
 ## Collections
 

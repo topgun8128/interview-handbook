@@ -6,7 +6,7 @@
 * [Technical](technical/README.md)
   * [General Topics](technical/general-topics/README.md)
     * [Java](technical/general-topics/java/README.md)
-      * [Short Questions and Points to Note](technical/general-topics/java/short-questions-and-points-to-note.md)
+      * [Quick Summary](technical/general-topics/java/short-questions-and-points-to-note.md)
       * [Java NIO](technical/general-topics/java/java-nio.md)
       * [Java Multi-Threading](technical/general-topics/java/java-multi-threading.md)
       * [Java GC](technical/general-topics/java/java-gc.md)
