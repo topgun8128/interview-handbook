@@ -84,3 +84,9 @@ Complexity The worst case time complexity of this algorithm is O\(N2\) , but as 
 
 {% embed data="{\"url\":\"https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/visualize/\",\"type\":\"link\",\"title\":\"Quick Sort visualize \| Sorting \| Algorithms \| HackerEarth\",\"description\":\"Visualize your learning on Quick Sort to improve your understanding of Algorithms.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://hackerearth.global.ssl.fastly.net/static/hackerearth/images/logo/HE\_identity.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://hackerearth.global.ssl.fastly.net/static/hackerearth/images/logo/HE\_cover.jpg\",\"width\":1100,\"height\":350,\"aspectRatio\":0.3181818181818182}}" %}
 
+
+
+### BETTER DEMONSTRATION
+
+{% embed data="{\"url\":\"http://me.dt.in.th/page/Quicksort/\",\"type\":\"link\",\"title\":\"Understanding Quicksort \(with interactive demo\) ★ me.dt.in.th\"}" %}
+
