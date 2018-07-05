@@ -31,7 +31,11 @@ You may assume k is always valid, 1 ≤ k ≤ array's length.
 
 ### Verbal
 
+**Method 1 \(Simple Solution\)**   
+A Simple Solution is to sort the given array using a O\(nlogn\) sorting algorithm like [Merge Sort](http://geeksquiz.com/merge-sort/), [Heap Sort](http://geeksquiz.com/heap-sort/), etc and return the element at index k-1 in the sorted array. Time Complexity of this solution is O\(nLogn\).
 
+**Method 2 \(Using Min Heap – HeapSelect\)**  
+We can find k’th largest element in time complexity better than O\(nlogn\). A simple optomization is to create a [Max Heap ](http://geeksquiz.com/binary-heap/)of the given n elements and call extractMax\(\) k times.
 
 ### Java
 
