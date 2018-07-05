@@ -12,7 +12,7 @@ The minimum element in the array i.e. 2 is searched for and then swapped with th
 
 Let’s take a look at the implementation.
 
-```text
+```java
 void selection_sort (int A[ ], int n) {
         // temporary variable to store the position of minimum element
 
