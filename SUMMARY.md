@@ -12,7 +12,7 @@
       * [Java GC](technical/general-topics/java/java-gc.md)
       * [Java Spring](technical/general-topics/java/java-spring.md)
       * [HashMap](technical/general-topics/java/hashmap.md)
-      * [Iterator in Java](technical/general-topics/java/iterator-in-java.md)
+      * [Iterators](technical/general-topics/java/iterator-in-java.md)
     * [Python](technical/general-topics/python.md)
     * [Big O Notation](technical/general-topics/big-o-notation.md)
     * [Agile](technical/general-topics/agile.md)

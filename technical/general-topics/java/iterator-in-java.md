@@ -1,2 +1,2 @@
-# Iterator in Java
+# Iterators
 

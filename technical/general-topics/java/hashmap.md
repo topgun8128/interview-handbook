@@ -2,7 +2,7 @@
 
 ## [https://netjs.blogspot.com/2015/05/how-hashmap-internally-works-in-java.html?m=1](https://netjs.blogspot.com/2015/05/how-hashmap-internally-works-in-java.html?m=1)
 
-#### How HashMap Internally Works in Java
+### How HashMap Internally Works in Java
 
 This post talks about HashMap internal implementation in Java, which is also a favourite [Java Collections interview question](https://netjs.blogspot.com/2015/11/java-collections-interview-questions.html).
 
@@ -108,7 +108,7 @@ Using the key \(passed in the get\(\) method\) again hash value will be calculat
 
 **HashMap in Java also allows null as key**, though there can only be one null key in HashMap. While storing the Entry object HashMap implementation checks if the key is null, in case key is null, it always map to bucket 0, as **hash is not calculated for null keys.** 
 
-**HashMap changes in Java 8**
+### **HashMap changes in Java 8**
 
 Though HashMap implementation in Java provides constant time performance **O\(1\)** for get\(\) and put\(\) methods but that is in the **ideal case** when the Hash function distributes the objects evenly among the buckets. 
 
@@ -116,7 +116,7 @@ But the performance may worsen in the case **hashCode\(\)** used is not proper a
 
 To address this issue in Java 8 hash elements **use balanced trees instead of linked lists after a certain threshold is reached**. Which means HashMap starts with storing Entry objects in linked list but after the number of items in a hash becomes larger than a certain threshold, the hash will change from using a linked list to a balanced tree, this will improve the worst case performance **from O\(n\) to O\(log n\).**
 
-**Points to note -**
+### **Points to note**
 
 * HashMap works on the principal of hashing.
 * HashMap uses the hashCode\(\) method to calculate a hash value. Hash value is calculated using the key object. This hash value is used to find the correct bucket where Entry object will be stored.
@@ -131,17 +131,24 @@ That's all for this topic **How HashMap Internally Works in Java**. If you have 
 
 ## [https://javarevisited.blogspot.com/2011/02/how-hashmap-works-in-java.html?m=1](https://javarevisited.blogspot.com/2011/02/how-hashmap-works-in-java.html?m=1)
 
-**1\) Why String, Integer and other wrapper classes are considered good keys?**String, Integer and other wrapper classes are natural candidates of HashMap key, and String is most frequently used key as well because [String is immutable and final](http://javarevisited.blogspot.sg/2010/10/why-string-is-immutable-in-java.html), and overrides equals and hashcode\(\) method. Other wrapper class also shares similar property. Immutability is required, in order to prevent changes on fields used to calculate hashCode\(\) because if key object returns different hashCode during insertion and retrieval than it won't be possible to get an object from HashMap.   
+### **1\) Why String, Integer and other wrapper classes are considered good keys?**
+
+String, Integer and other wrapper classes are natural candidates of HashMap key, and String is most frequently used key as well because [String is immutable and final](http://javarevisited.blogspot.sg/2010/10/why-string-is-immutable-in-java.html), and overrides equals and hashcode\(\) method. Other wrapper class also shares similar property. Immutability is required, in order to prevent changes on fields used to calculate hashCode\(\) because if key object returns different hashCode during insertion and retrieval than it won't be possible to get an object from HashMap.   
   
-Immutability is best as it offers other advantages as well like [thread-safety](http://javarevisited.blogspot.sg/2012/01/how-to-write-thread-safe-code-in-java.html), If you can  keep your hashCode same by only making certain fields final, then you go for that as well. Since equals\(\) and hashCode\(\) method is used during retrieval of value object from HashMap, it's important that key object correctly override these methods and follow contact. If unequal object returns different hashcode than chances of collision will be less which subsequently improve the performance of HashMap.  
-  
-**2\) Can we use any custom object as a key in HashMap?**This is an extension of previous questions. Of course you can use any Object as key in Java HashMap provided it follows equals and hashCode contract and its hashCode should not vary once the object is inserted into [Map](http://javarevisited.blogspot.sg/2011/12/how-to-traverse-or-loop-hashmap-in-java.html). If the custom object is Immutable than this will be already taken care because you can not change it once created.   
-  
-**3\) Can we use ConcurrentHashMap in place of Hashtable?**This is another question which getting popular due to increasing popularity of ConcurrentHashMap. Since we know Hashtable is synchronized but ConcurrentHashMap provides better concurrency by only locking portion of map determined by concurrency level. ConcurrentHashMap is certainly introduced as Hashtable and can be used in place of it, but Hashtable provides stronger thread-safety than ConcurrentHashMap. See my post [difference between Hashtable and ConcurrentHashMap](http://javarevisited.blogspot.sg/2011/04/difference-between-concurrenthashmap.html) for more details.
+Immutability is best as it offers other advantages as well like [thread-safety](http://javarevisited.blogspot.sg/2012/01/how-to-write-thread-safe-code-in-java.html), If you can  keep your hashCode same by only making certain fields final, then you go for that as well. Since equals\(\) and hashCode\(\) method is used during retrieval of value object from HashMap, it's important that key object correctly override these methods and follow contact. If unequal object returns different hashcode than chances of collision will be less which subsequently improve the performance of HashMap.
+
+### **2\) Can we use any custom object as a key in HashMap?**
+
+This is an extension of previous questions. Of course you can use any Object as key in Java HashMap provided it follows equals and hashCode contract and its hashCode should not vary once the object is inserted into [Map](http://javarevisited.blogspot.sg/2011/12/how-to-traverse-or-loop-hashmap-in-java.html). If the custom object is Immutable than this will be already taken care because you can not change it once created. 
+
+### **3\) Can we use ConcurrentHashMap in place of Hashtable?**
+
+This is another question which getting popular due to increasing popularity of ConcurrentHashMap. Since we know Hashtable is synchronized but ConcurrentHashMap provides better concurrency by only locking portion of map determined by concurrency level. ConcurrentHashMap is certainly introduced as Hashtable and can be used in place of it, but Hashtable provides stronger thread-safety than ConcurrentHashMap. See my post [difference between Hashtable and ConcurrentHashMap](http://javarevisited.blogspot.sg/2011/04/difference-between-concurrenthashmap.html) for more details.
 
 ## [https://javarevisited.blogspot.com/2011/04/difference-between-concurrenthashmap.html](https://javarevisited.blogspot.com/2011/04/difference-between-concurrenthashmap.html)
 
-**ConcurrentHashMap vs Hashtable vs Synchronized Map**  
+### **ConcurrentHashMap vs Hashtable vs Synchronized Map**
+
 Though all three collection classes are thread-safe and can be used in multi-threaded, concurrent Java application, there is a significant difference between them, which arise from the fact that how they achieve their thread-safety. **Hashtable** is a **legacy** class from JDK 1.1 itself, which **uses synchronized methods to achieve thread-safety.** All methods of Hashtable are synchronized which makes them quite slow due to contention if a number of thread increases. **Synchronized Map** is also not very different than Hashtable and provides **similar** performance in concurrent Java programs. The only difference between Hashtable and Synchronized Map is that later is **not a legacy** and you can **wrap any Map to create it's synchronized version by using Collections.synchronizedMap\(\) method**.  
   
   
@@ -149,7 +156,7 @@ On the other hand, **ConcurrentHashMap** is specially designed for concurrent us
 
 ## [https://javarevisited.blogspot.com/2013/02/concurrenthashmap-in-java-example-tutorial-working.html](https://javarevisited.blogspot.com/2013/02/concurrenthashmap-in-java-example-tutorial-working.html)
 
-#### Summary
+### Summary
 
 1. ConcurrentHashMap allows concurrent read and thread-safe update operation.
 2. During the update operation, ConcurrentHashMap only locks a portion of Map instead of whole Map.
