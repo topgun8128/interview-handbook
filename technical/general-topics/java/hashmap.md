@@ -127,3 +127,17 @@ To address this issue in Java 8 hash elements **use balanced trees instead of li
 
 That's all for this topic **How HashMap Internally Works in Java**. If you have any doubt or any suggestions to make please drop a comment. Thanks!
 
+
+
+## [https://javarevisited.blogspot.com/2011/02/how-hashmap-works-in-java.html?m=1](https://javarevisited.blogspot.com/2011/02/how-hashmap-works-in-java.html?m=1)
+
+**1\) Why String, Integer and other wrapper classes are considered good keys?**String, Integer and other wrapper classes are natural candidates of HashMap key, and String is most frequently used key as well because [String is immutable and final](http://javarevisited.blogspot.sg/2010/10/why-string-is-immutable-in-java.html), and overrides equals and hashcode\(\) method. Other wrapper class also shares similar property. Immutability is required, in order to prevent changes on fields used to calculate hashCode\(\) because if key object returns different hashCode during insertion and retrieval than it won't be possible to get an object from HashMap.   
+  
+Immutability is best as it offers other advantages as well like [thread-safety](http://javarevisited.blogspot.sg/2012/01/how-to-write-thread-safe-code-in-java.html), If you can  keep your hashCode same by only making certain fields final, then you go for that as well. Since equals\(\) and hashCode\(\) method is used during retrieval of value object from HashMap, it's important that key object correctly override these methods and follow contact. If unequal object returns different hashcode than chances of collision will be less which subsequently improve the performance of HashMap.  
+  
+**2\) Can we use any custom object as a key in HashMap?**This is an extension of previous questions. Of course you can use any Object as key in Java HashMap provided it follows equals and hashCode contract and its hashCode should not vary once the object is inserted into [Map](http://javarevisited.blogspot.sg/2011/12/how-to-traverse-or-loop-hashmap-in-java.html). If the custom object is Immutable than this will be already taken care because you can not change it once created.   
+  
+**3\) Can we use ConcurrentHashMap in place of Hashtable?**This is another question which getting popular due to increasing popularity of ConcurrentHashMap. Since we know Hashtable is synchronized but ConcurrentHashMap provides better concurrency by only locking portion of map determined by concurrency level. ConcurrentHashMap is certainly introduced as Hashtable and can be used in place of it, but Hashtable provides stronger thread-safety than ConcurrentHashMap. See my post [difference between Hashtable and ConcurrentHashMap](http://javarevisited.blogspot.sg/2011/04/difference-between-concurrenthashmap.html) for more details.
+
+
+
