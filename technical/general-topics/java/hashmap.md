@@ -410,6 +410,18 @@ Default load factor of Hashmap/CHM is 0.75f \(i.e 75% of current map size\).
 **In CHM, Every segment is separately rehashed so there is no collision between Thread 1 writing to Segment index 2 and Thread 2 writing to Segment index 5.**  
   
 **Example:** If say Thread 1 which is putting data in Segment\[\] array index 2 finds that HashEntry\[\] array needs to be rehashed due to exceed Load factor capacity then it will rehash HashEntry\[\] array present at Segment\[\] array index 2 only.  
-HashEntry\[\] array at other Segment indexes will still be intact, unaffected and continue to serve put and get request parallely.  
+HashEntry\[\] array at other Segment indexes will still be intact, unaffected and continue to serve put and get request parallely.
 
+### Short Summary
+
+* Multiple partitions which can be locked independently. \(16 by default\)
+* Using concurrent Locks operations for thread safety instead of synchronized.
+* Has thread safe Iterators. synchronizedCollection's iterators are not thread safe.
+* Does not expose the internal locks. synchronizedCollection does.
+
+
+
+## More References
+
+{% embed data="{\"url\":\"https://stackoverflow.com/questions/14947723/is-concurrenthashmap-totally-safe/14947844\",\"type\":\"link\",\"title\":\"Is ConcurrentHashMap totally safe?\",\"description\":\"this is a passage from JavaDoc regarding ConcurrentHashMap. It says retrieval operations generally do not block, so may overlap with update operations. Does this mean the get\(\) method is not thread...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded\",\"width\":316,\"height\":316,\"aspectRatio\":1}}" %}
 
