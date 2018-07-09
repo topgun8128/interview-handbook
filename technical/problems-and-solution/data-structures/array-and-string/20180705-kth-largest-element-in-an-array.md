@@ -50,7 +50,7 @@ class Solution {
 }
 ```
 
-#### Solution 2 - Efficiency: Average: O\(N\), Max: O\(N^2\)
+#### Solution 2 - Efficiency: Average: O\(2N\), Max: O\(N^2\)
 
 ```java
 
