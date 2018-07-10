@@ -39,7 +39,9 @@ This is an optimization over method 1 if [QuickSort ](http://geeksquiz.com/quick
 
 ### Java
 
-#### Solution 1 - Efficiency: O\(N log N\)
+#### Solution 1 - Using Default Sorting
+
+#### Efficiency: O\(N log N\)
 
 ```java
 class Solution {
@@ -50,9 +52,95 @@ class Solution {
 }
 ```
 
-#### Solution 2 - Efficiency: Average: O\(2N\), Max: O\(N^2\)
+#### Solution 2 - Using Selection Sort up to the kth largest element
+
+#### Efficiency: Average: O\(2N\), Max: O\(N^2\)
 
 ```java
-
+class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        
+        // Perform Selection Sort until the kth largest one, then stop
+        int len = nums.length;
+        int maxElem;
+        for (int i=0; i < k; i++) {
+            // Assume the first one is the largest
+            maxElem = i;
+            
+            // for the remaining unsorted items
+            for (int j = i+1; j < len; j++) {
+                if (nums[maxElem] < nums[j]) {
+                    maxElem = j;
+                }
+            }
+            swap(nums, i, maxElem);
+        }
+        
+        return nums[k-1];
+        
+    }
+    
+    public void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+}
 ```
+
+#### Solution 2b - Improved version to use Selection Sort in opposite way if k is larger than half of the length of array
+
+#### Efficiency: Average: O\(2N\), Max: O\(N^2\)
+
+```java
+class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        int len = nums.length;
+        if (k * 2 > len) {
+            // Perform Selection Sort until the len - kth smallest one, then stop
+            int reverseK = len - k + 1;
+            int minElem;
+            for (int i=0; i < reverseK; i++) {
+                // Assume the first one is the smallest
+                minElem = i;
+
+                // for the remaining unsorted items
+                for (int j = i+1; j < len; j++) {
+                    if (nums[minElem] > nums[j]) {
+                        minElem = j;
+                    }
+                }
+                swap(nums, i, minElem);
+            }
+
+            return nums[reverseK-1]; 
+        } else {
+            // Perform Selection Sort until the kth largest one, then stop
+            int maxElem;
+            for (int i=0; i < k; i++) {
+                // Assume the first one is the largest
+                maxElem = i;
+
+                // for the remaining unsorted items
+                for (int j = i+1; j < len; j++) {
+                    if (nums[maxElem] < nums[j]) {
+                        maxElem = j;
+                    }
+                }
+                swap(nums, i, maxElem);
+            }
+
+            return nums[k-1]; 
+        }
+    }
+    
+    public void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+}
+```
+
+
 
