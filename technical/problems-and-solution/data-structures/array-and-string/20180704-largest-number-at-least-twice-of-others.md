@@ -43,7 +43,9 @@ Go through all the elements from the beginning, assign the current one as max, c
 
 ### Java
 
-#### Solution 1 - Efficiency: O\(N\)
+#### Solution 1 - Loop the whole array once, remember the position of doubled max.
+
+#### Efficiency: O\(N\)
 
 ```java
 class Solution {
