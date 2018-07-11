@@ -4,23 +4,39 @@
 
 1. **What is the difference between Process and Thread?**
 
-   A process is a self contained execution environment and it can be seen as a program or application whereas Thread is a single task of execution within the process. Java runtime environment runs as a single process which contains different classes and programs as processes. Thread can be called lightweight process. Thread requires less resources to create and exists in the process, thread shares the process resources.
+   A **process** is a **self contained execution** environment and it can be seen as a **program** or **application \(have its own JVM\)** whereas **Thread** is a **single task of execution within the process**. Java runtime environment runs as a single process which contains different classes and programs as processes. Thread can be called lightweight process. Thread requires less resources to create and exists in the process, thread shares the process resources.  
+  
+
+
+   | Memory | Run in separate memory spaces. | Run in shared memory spaces. |
+   | --- | --- | --- |
+   | File descriptors  | Most file descriptors are not shared. | It shares file descriptors. |
+   | File system | There is no sharing of file system context. | It shares file system context. |
 
 2. **What are the benefits of multi-threaded programming?**
 
-   In Multi-Threaded programming, multiple threads are executing concurrently that improves the performance because CPU is not idle incase some thread is waiting to get some resources. Multiple threads share the heap memory, so it’s good to create multiple threads to execute some task rather than creating multiple processes. For example, Servlets are better in performance than CGI because Servlet support multi-threading but CGI doesn’t.
+   In Multi-Threaded programming, multiple threads are executing concurrently that improves the performance because **CPU is not idle** incase some thread is waiting to get some resources. **Multiple threads share the heap memory**, so it’s good to create multiple threads to execute some task rather than creating multiple processes. For example, **Servlets are better in performance than CGI because Servlet support multi-threading but CGI doesn’t.**  
+  
 
 3. **What is difference between user Thread and daemon Thread?**
 
-   When we create a Thread in java program, it’s known as user thread. A daemon thread runs in background and doesn’t prevent JVM from terminating. When there are no user threads running, JVM shutdown the program and quits. A child thread created from daemon thread is also a daemon thread.
+   When we create a Thread in java program, it’s known as **user thread**. A **daemon thread** runs in background and **doesn’t prevent JVM from terminating**. When there are **no user threads running, JVM shutdown the program and quits**. A child thread created from daemon thread is also a daemon thread.
 
 4. **How can we create a Thread in Java?**
 
-   There are two ways to create Thread in Java – first by implementing Runnable interface and then creating a Thread object from it and second is to extend the Thread Class. Read this post to learn more about [creating threads in java](https://www.journaldev.com/1016/java-thread-example).
+   There are two ways to create Thread in Java – first by **implementing Runnable** interface and then creating a Thread object from it and second is to **extend the Thread** Class. Read this post to learn more about [creating threads in java](https://www.journaldev.com/1016/java-thread-example).  
+  
+   Using Lamda in Java 8  
+   [https://www.linkedin.com/pulse/creating-java-threads-lambdasnot-extending-thread-class-saral-saxena](https://www.linkedin.com/pulse/creating-java-threads-lambdasnot-extending-thread-class-saral-saxena)  
 
 5. **What are different states in lifecycle of Thread?**
 
-   When we create a Thread in java program, its state is New. Then we start the thread that change it’s state to Runnable. Thread Scheduler is responsible to allocate CPU to threads in Runnable thread pool and change their state to Running. Other Thread states are Waiting, Blocked and Dead. Read this post to learn more about [life cycle of thread](https://www.journaldev.com/1044/thread-life-cycle-in-java-thread-states-in-java).
+   When we create a Thread in java program, its state is **New**. Then we **start** the thread that change it’s state to **Runnable**. Thread Scheduler is responsible to allocate CPU to threads in Runnable thread pool and change their state to **Running**. Other Thread states are **Waiting**, **Blocked** and **Dead**. Read this post to learn more about [life cycle of thread](https://www.journaldev.com/1044/thread-life-cycle-in-java-thread-states-in-java).  
+
+
+   ![Thread Life cycle in java, Thread States in java, thread life cycle](https://cdn.journaldev.com/wp-content/uploads/2012/12/Thread-Lifecycle-States-450x227.png)
+
+  
 
 6. **Can we call run\(\) method of a Thread class?**
 
