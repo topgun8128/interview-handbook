@@ -40,11 +40,11 @@
 
 6. **Can we call run\(\) method of a Thread class?**
 
-   Yes, we can call run\(\) method of a Thread class but then it will behave like a normal method. To actually execute it in a Thread, we need to start it using **Thread.start\(\)** method.
+   Yes, we can call run\(\) method of a Thread class but then it will behave like a normal method. To actually execute it in a Thread, we need to start it using **Thread.start\(\)** method.  
 
 7. **How can we pause the execution of a Thread for specific time?**
 
-   We can use Thread class sleep\(\) method to pause the execution of Thread for certain time. Note that this will not stop the processing of thread for specific time, once the thread awake from sleep, it’s state gets changed to runnable and based on thread scheduling, it gets executed.
+   We can use Thread class sleep\(\) method to pause the execution of Thread for certain time. Note that this will not stop the processing of thread for specific time, once the thread awake from sleep, it’s state gets changed to runnable and based on thread scheduling, it gets executed.  
 
 8. **What do you understand about Thread Priority?**
 
