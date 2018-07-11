@@ -43,6 +43,7 @@
         * [20180704 Plus One](technical/problems-and-solution/data-structures/array-and-string/20180704-plus-one.md)
         * [20180705 Kth Largest Element in an Array](technical/problems-and-solution/data-structures/array-and-string/20180705-kth-largest-element-in-an-array.md)
         * [20180705 Merge Sort](technical/problems-and-solution/data-structures/array-and-string/20180705-merge-sort.md)
+        * [20180712 Diagonal Traverse](technical/problems-and-solution/data-structures/array-and-string/20180712-diagonal-traverse.md)
       * [Linked List](technical/problems-and-solution/data-structures/linked-list.md)
       * [Complex](technical/problems-and-solution/data-structures/complex.md)
 
