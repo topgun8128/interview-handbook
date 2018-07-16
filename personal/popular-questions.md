@@ -1,4 +1,0 @@
-# Popular Questions
-
-\[TBC\]
-

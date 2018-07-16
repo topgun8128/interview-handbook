@@ -1,8 +1,6 @@
 # Table of contents
 
-* [Handbook](README.md)
-* [Personal](personal/README.md)
-  * [Popular Questions](personal/popular-questions.md)
+* [Interview Handbook](README.md)
 * [Technical](technical/README.md)
   * [General Topics](technical/general-topics/README.md)
     * [Java](technical/general-topics/java/README.md)
