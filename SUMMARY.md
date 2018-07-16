@@ -15,6 +15,7 @@
     * [FIX](technical/general-topics/fix/README.md)
       * [Top Interview Questions](technical/general-topics/fix/top-interview-questions.md)
       * [MiFID 2](technical/general-topics/fix/mifid-2.md)
+      * [From Jimmy](technical/general-topics/fix/from-jimmy.md)
     * [Python](technical/general-topics/python.md)
     * [Big O Notation](technical/general-topics/big-o-notation.md)
     * [Agile](technical/general-topics/agile.md)
