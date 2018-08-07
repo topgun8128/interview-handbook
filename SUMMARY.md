@@ -39,6 +39,8 @@
       * [Introduction to Dynamic Programming 1](technical/general-topics/dynamic-programming/introduction-to-dynamic-programming-1.md)
     * [SSL](technical/general-topics/ssl/README.md)
       * [Keystore vs Truststore](technical/general-topics/ssl/keystore-vs-truststore.md)
+      * [Apply SSL Steps](technical/general-topics/ssl/apply-ssl-steps-from-gfix-gateway-web.md)
+      * [Configuration of Websphere MQ JMS Client](technical/general-topics/ssl/untitled.md)
   * [Problems and Solution](technical/problems-and-solution/README.md)
     * [Data Structures](technical/problems-and-solution/data-structures/README.md)
       * [Array and String](technical/problems-and-solution/data-structures/array-and-string/README.md)
