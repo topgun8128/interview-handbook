@@ -298,7 +298,7 @@ Segment array size is configured using ConcurrencyLevel parameter as shown below
 [?](http://javabypatel.blogspot.com/2016/09/concurrenthashmap-interview-questions.html#)
 
 | 1 | `ConcurrentHashMap m =` `new` `ConcurrentHashMap(initialCapacity, loadFactor, concurrencyLevel)` |
-| --- |
+| :--- | :--- |
 
 
   
@@ -309,7 +309,7 @@ Segment array size is configured using ConcurrencyLevel parameter as shown below
 [?](http://javabypatel.blogspot.com/2016/09/concurrenthashmap-interview-questions.html#)
 
 | 1 | `ConcurrentHashMap m =` `new` `ConcurrentHashMap(200` `,` `0.75f,` `10);` |
-| --- |
+| :--- | :--- |
 
 
 **Initial capacity** is 200, it means CHM make sure it has space for adding 200 key-value pairs after creation.  
@@ -370,7 +370,7 @@ We saw that each index of Segment array itself i**s** complete HashMap,
 [?](http://javabypatel.blogspot.com/2016/09/concurrenthashmap-interview-questions.html#)
 
 | 12345678910 | `static` `final` `class` `Segment<K,V>` `extends` `ReentrantLock` `implements` `Serializable { transient` `volatile` `HashEntry<K,V>[] table;}` `static` `final` `class` `HashEntry<K,V> { final` `int` `hash; final` `K key; volatile` `V value; volatile` `HashEntry<K,V> next;}` |
-| --- |
+| :--- | :--- |
 
 
   
@@ -382,7 +382,7 @@ We saw that each index of Segment array itself i**s** complete HashMap,
 [?](http://javabypatel.blogspot.com/2016/09/concurrenthashmap-interview-questions.html#)
 
 | 1 | `ConcurrentHashMap m =` `new` `ConcurrentHashMap(initialCapacity, loadFactor, concurrencyLevel)` |
-| --- |
+| :--- | :--- |
 
 
   

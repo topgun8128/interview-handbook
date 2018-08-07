@@ -9,7 +9,7 @@
 
 
    | Memory | Run in separate memory spaces. | Run in shared memory spaces. |
-   | --- | --- | --- |
+   | :--- | :--- | :--- |
    | File descriptors  | Most file descriptors are not shared. | It shares file descriptors. |
    | File system | There is no sharing of file system context. | It shares file system context. |
 

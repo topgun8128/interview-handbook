@@ -5,7 +5,7 @@
 ### Main Differences Betwen Java NIO and IO 
 
 | **IO** | **NIO** |
-| --- | --- | --- | --- |
+| :--- | :--- |
 | Stream oriented | Buffer oriented |
 | Blocking IO | Non blocking IO |
 |   | Selectors |
@@ -39,13 +39,13 @@ Java NIO's selectors allow a **single thread to monitor multiple channels of inp
 If you need to manage thousands of open connections simultanously, which each only send a little data, for instance a chat server, implementing the server in NIO is probably an advantage. Similarly, if you need to keep a lot of open connections to other computers, e.g. in a P2P network, using a single thread to manage all of your outbound connections might be an advantage. This one thread, multiple connections design is illustrated in this diagram:
 
 | ![Java NIO: A single thread managing multiple connections.](http://tutorials.jenkov.com/images/java-nio/nio-vs-io-3.png) |
-| --- | --- |
+| :--- |
 | **Java NIO: A single thread managing multiple connections.** |
 
 If you have fewer connections with very high bandwidth, sending a lot of data at a time, perhaps a classic IO server implementation might be the best fit. This diagram illustrates a classic IO server design:
 
 | ![Java IO: A classic IO server design - one connection handled by one thread.](http://tutorials.jenkov.com/images/java-nio/nio-vs-io-4.png) |
-| --- | --- |
+| :--- |
 | **Java IO: A classic IO server design - one connection handled by one thread.** |
 
 ## [https://javarevisited.blogspot.com/2014/08/socket-programming-networking-interview-questions-answers-Java.html](java-nio.md#https-javarevisited-blogspot-com-2014-08-socket-programming-networking-interview-questions-answers-java-html)

@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Interview Handbook](README.md)
+* [My Study Handbook](README.md)
 * [Technical](technical/README.md)
   * [General Topics](technical/general-topics/README.md)
     * [Java](technical/general-topics/java/README.md)
@@ -37,6 +37,8 @@
         * [Shortest Path Algorithms](technical/general-topics/algorithms/graphs/shortest-path-algorithms.md)
     * [Dynamic Programming](technical/general-topics/dynamic-programming/README.md)
       * [Introduction to Dynamic Programming 1](technical/general-topics/dynamic-programming/introduction-to-dynamic-programming-1.md)
+    * [SSL](technical/general-topics/ssl/README.md)
+      * [Keystore vs Truststore](technical/general-topics/ssl/keystore-vs-truststore.md)
   * [Problems and Solution](technical/problems-and-solution/README.md)
     * [Data Structures](technical/problems-and-solution/data-structures/README.md)
       * [Array and String](technical/problems-and-solution/data-structures/array-and-string/README.md)
