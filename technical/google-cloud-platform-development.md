@@ -1,4 +1,4 @@
-# Google Cloud Platform Development
+# Developing Applications with Google Cloud Platform
 
 ## Introducing Google Cloud Platform
 

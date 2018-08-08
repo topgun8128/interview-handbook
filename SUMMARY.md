@@ -52,5 +52,5 @@
         * [20180712 Diagonal Traverse](technical/problems-and-solution/data-structures/array-and-string/20180712-diagonal-traverse.md)
       * [Linked List](technical/problems-and-solution/data-structures/linked-list.md)
       * [Complex](technical/problems-and-solution/data-structures/complex.md)
-  * [Google Cloud Platform Development](technical/google-cloud-platform-development.md)
+  * [Developing Applications with Google Cloud Platform](technical/google-cloud-platform-development.md)
 
