@@ -41,6 +41,8 @@
       * [Keystore vs Truststore](technical/general-topics/ssl/keystore-vs-truststore.md)
       * [Apply SSL Steps](technical/general-topics/ssl/apply-ssl-steps-from-gfix-gateway-web.md)
       * [Configuration of Websphere MQ JMS Client](technical/general-topics/ssl/untitled.md)
+    * [Cloud Technologies](technical/general-topics/cloud-technology/README.md)
+      * [Developing Applications with Google Cloud Platform](technical/general-topics/cloud-technology/google-cloud-platform-development.md)
   * [Problems and Solution](technical/problems-and-solution/README.md)
     * [Data Structures](technical/problems-and-solution/data-structures/README.md)
       * [Array and String](technical/problems-and-solution/data-structures/array-and-string/README.md)
@@ -52,5 +54,4 @@
         * [20180712 Diagonal Traverse](technical/problems-and-solution/data-structures/array-and-string/20180712-diagonal-traverse.md)
       * [Linked List](technical/problems-and-solution/data-structures/linked-list.md)
       * [Complex](technical/problems-and-solution/data-structures/complex.md)
-  * [Developing Applications with Google Cloud Platform](technical/google-cloud-platform-development.md)
 
