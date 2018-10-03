@@ -1,4 +1,4 @@
-# Avoid Full GC
+# Avoid long GC pause time
 
 
 
@@ -30,7 +30,15 @@ When the young generation is undersized, objects will be prematurely promoted to
 
 Even though IBM does not make any recommendations, IBM recommends a value of 1/4 of the total heap size for -Xmn.
 
+### 3. Choice of GC Algorithm
 
+Your GC algorithm has a major influence on the GC pause time. If you are a GC expert or intend to become one \(or someone on your team is a GC expert\), you can tune GC settings to obtain optimal GC pause time. If you don’t have a lot of GC expertise, then I would recommend using the G1 GC algorithm because of its **auto-tuning** capability. In G1 GC, you can set the GC pause time goal using the system property ‘-XX:MaxGCPauseMillis.’ Example:
+
+```text
+ -XX:MaxGCPauseMillis=200
+```
+
+As per the above example, the maximum GC pause time is set to 200 milliseconds. This is a soft goal, which JVM will try it’s best to meet it. 
 
 ### 4. Process Swapping
 
