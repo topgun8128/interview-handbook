@@ -40,6 +40,14 @@ Your GC algorithm has a major influence on the GC pause time. If you are a GC ex
 
 As per the above example, the maximum GC pause time is set to 200 milliseconds. This is a soft goal, which JVM will try it’s best to meet it. 
 
+There are five widely used garbage collector solutions for OpenJDK:
+
+* G1
+* Parallel
+* ConcMarkSweep \(CMS\)
+* Serial
+* Shenandoah
+
 ### 4. Process Swapping
 
 If you find your processes are swapping, then do one of the following:
