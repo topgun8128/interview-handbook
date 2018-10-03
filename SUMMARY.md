@@ -8,6 +8,7 @@
       * [Java NIO](technical/general-topics/java/java-nio.md)
       * [Java Multi-Threading](technical/general-topics/java/java-multi-threading.md)
       * [Java GC](technical/general-topics/java/java-gc.md)
+      * [Avoid Full GC](technical/general-topics/java/avoid-full-gc.md)
       * [Java Spring](technical/general-topics/java/java-spring.md)
       * [HashMap](technical/general-topics/java/hashmap.md)
       * [ArrayList vs LinkedList](technical/general-topics/java/arraylist-vs-linkedlist.md)
